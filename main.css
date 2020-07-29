@@ -1,0 +1,91 @@
+/* || GENERAL STYLES */
+
+body{
+    font: 100% -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+}
+
+main{
+    display: flex;
+    flex-flow: column;
+}
+
+h1{
+    align-self: center;
+}
+/* || SITEWIDE */
+
+/* Heading and Navigation */
+
+nav h1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    /* SET "align-self: auto;" IF NAV H1 IS MESSED UP */
+}
+
+nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 25%;
+    max-width: 200px;
+    background: cornflowerblue;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+    border-right: black thick solid;
+}
+
+nav li a{
+    display: block;
+    padding: 8px 16px;
+    text-decoration: none;
+    color: black;
+}
+
+nav li a:hover{
+    color: black;
+    background: lightgray;
+}
+
+.current_page{
+    background: lightgray;
+}
+
+/* || PAGE SPECIFIC */
+
+/* Standings */
+
+main.standings_page{
+    display: flex;
+    flex-flow: column;
+    align-items: flex-end;
+    margin-right: 10px;
+    margin-left: 25%;
+}
+
+@media screen and (min-width: 600px)
+{
+    main.standings_page{
+        align-items: center;
+    }
+}
+
+.standings_page table{
+    border: 2px solid black;
+}
+
+.standings_page table tbody tr:nth-of-type(even){
+    background: lightgray;
+}
+
+.standings_page table tbody tr:nth-of-type(odd){
+    text-align: left;
+}
+
+.standings_page .pos_diff{
+    color: green;
+}
+
+.standings_page .neg_diff{
+    color: red;
+}
