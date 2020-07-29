@@ -76,11 +76,12 @@ main.standings_page{
 
 .standings_page tbody tr:nth-of-type(odd){
     text-align: left;
-    background: rgb(255, 222, 222);
+    font-style: italic;
 }
 
 .standings_page thead th{
     border-bottom: 2px solid black;
+    background: rgb(255, 222, 222);
 }
 
 .standings_page th,
@@ -115,5 +116,9 @@ main.standings_page{
 @media screen and (min-width: 800px){
     .standings_page thead th{
         width: 10%;
+    }
+
+    .standings_page th{
+        letter-spacing: 1px;
     }
 }
